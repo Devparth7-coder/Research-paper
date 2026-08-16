@@ -1,0 +1,26 @@
+name: CI
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - run: pip install -e .[dev]
+      - run: pytest
+      - name: Deterministic reduced smoke run
+        run: |
+          mas-reliab generate-data --config configs/pilot.yaml
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          p=Path('data/tasks/tasks_v1.jsonl')
+          assert sum(1 for _ in p.open()) == 150
+          print('dataset smoke check passed')
+          PY

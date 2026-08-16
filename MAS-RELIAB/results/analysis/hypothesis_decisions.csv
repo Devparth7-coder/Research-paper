@@ -1,0 +1,7 @@
+hypothesis,decision,observed_basis
+H1,mixed support,"Early injections increased EPR and depth, but their DAF contrast was lower than late injections; the directional evidence was mixed."
+H2,supported,Paired full-trace versus output-only top-1 attribution.
+H3,supported,Paired local-verification reduction in EPR/DAF versus final-only/no verification.
+H4,not supported,Recovery gain and work-unit cost of isolate/redundant versus retry.
+H5,not supported,Hierarchy manager-versus-leaf and parallel-versus-hierarchical worker contrasts.
+H6,not supported,"TSR rank=['single', 'sequential', 'parallel', 'hierarchical']; cost rank=['single', 'sequential', 'parallel', 'hierarchical']; DAF-containment rank=['parallel', 'hierarchical', 'sequential', 'single']."

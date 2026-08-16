@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+title: "MAS-RELIAB: Offline Simulation Pilot"
+message: "If you use this software or pilot dataset, please cite this repository."
+type: software
+authors:
+  - family-names: Parth
+    given-names: Dev
+version: 0.2.0
+date-released: 2026-08-16
+license: MIT
+repository-code: "https://github.com/USERNAME/MAS-RELIAB"
+abstract: "A reproducible synthetic-agent simulation for studying failure propagation, attribution, verification, recovery, and reliability-cost trade-offs in four agent topologies."

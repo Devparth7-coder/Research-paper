@@ -1,0 +1,40 @@
+{
+  "study_type": "offline stochastic synthetic-agent simulation pilot",
+  "external_model_api": false,
+  "python": "3.13.14 (main, Jul 14 2026, 04:45:36) [GCC 14.2.0]",
+  "platform": "Linux-6.1.158+-x86_64-with-glibc2.41",
+  "machine": "x86_64",
+  "processor": "not reported by platform",
+  "logical_cpu_count": 2,
+  "packages": {
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scipy": "1.17.1",
+    "matplotlib": "3.10.9",
+    "seaborn": "0.13.2",
+    "networkx": "3.6.1",
+    "PyYAML": "6.0.3"
+  },
+  "git_commit": null,
+  "config_file": "configs/pilot.yaml",
+  "config_sha256": "a19418f879006a9a3df62d64d52c501d7ea4f5685153ccb1d7f8bbd5fdb588c2",
+  "dataset_file": "data/tasks/tasks_v1.jsonl",
+  "dataset_sha256": "eb34739bd140d353e835c46d3f4059763b7b28bc229f2513d1c547e3421d700c",
+  "randomness": "SHA-256-derived per-episode NumPy seeds; no hosted model sampling",
+  "token_accounting": "not applicable; simulated work units are reported",
+  "latency": "deterministic simulated milliseconds, not wall-clock/API latency",
+  "artifact_hashes": {
+    "src/mas_reliab/__init__.py": "bc3964fd9eb836f17fc53dad81ba51b2178608342bd2fa83ce90d42399a56578",
+    "src/mas_reliab/__main__.py": "3129adff95e0f38b87ab34cddfc27082c7892bcaec267ff5d40f160fdf55b44a",
+    "src/mas_reliab/analysis.py": "18002f6609baac7769b1020e474d2094ce72b47fddf643606e86956a4ae1618c",
+    "src/mas_reliab/cli.py": "5c828eee158e1ec5861c4aa9f5e0af0fc17a4b01f3d7a06fdaa33be44eeed1dd",
+    "src/mas_reliab/dataset.py": "6ae096cdf3cf466abc8c8daed74103c219be3ee014acbaa5a73d154e4144f369",
+    "src/mas_reliab/engine.py": "e994ec2fd07a6832c575858c090bc2fa08e32e0c0470683e5a8aca5ec78abb11",
+    "src/mas_reliab/experiments.py": "c5ea26aeb42348f1b788ca7a51141a8174557f4b5a5020c955fdc0a1bed08711",
+    "src/mas_reliab/models.py": "1b9a1a1861c157543d038d938e1966b809b1352237195a03dd1276480f7f3f17",
+    "src/mas_reliab/topologies.py": "220d9763cce374ddb1d8a269fc29972323b7a02a98a94e3676505f98b95cc601",
+    "src/mas_reliab/utils.py": "34e3d0127f6a9cd04aa01eb9584166de254f6b35500e147194003e93ea812040",
+    "configs/pilot.yaml": "a19418f879006a9a3df62d64d52c501d7ea4f5685153ccb1d7f8bbd5fdb588c2",
+    "data/tasks/tasks_v1.jsonl": "eb34739bd140d353e835c46d3f4059763b7b28bc229f2513d1c547e3421d700c"
+  }
+}

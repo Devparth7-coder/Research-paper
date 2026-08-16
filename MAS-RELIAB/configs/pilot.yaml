@@ -1,0 +1,60 @@
+study:
+  name: mas-reliab-offline-pilot
+  version: 0.2.0
+  master_seed: 20260816
+  mode: simulation-pilot
+
+dataset:
+  n_tasks: 150
+  split_counts:
+    dev: 30
+    pilot: 30
+    evaluation: 90
+  families:
+    - arithmetic_pipeline
+    - shard_aggregation
+    - evidence_synthesis
+    - constraint_decision
+    - stateful_workflow
+  measured_task_limit: 60
+
+simulation:
+  topologies: [single, sequential, parallel, hierarchical]
+  fault_types: [wrong_value, truncation, referential_drift, timeout]
+  severities: [1, 2]
+  positions: [early, middle, late]
+  baseline_repeats: 5
+  fault_repeats: 2
+  base_error_rate: 0.025
+  difficulty_error_step: 0.018
+  local_detector_sensitivity: 0.82
+  final_detector_sensitivity: 0.68
+  correction_success: 0.90
+  false_positive_rate: 0.015
+  injection_application_failure_rate: 0.03
+  injection_nonconsumption_rate: 0.02
+
+experiments:
+  run_e1: true
+  run_e2: true
+  run_e3: true
+  run_e4: true
+  run_e5: true
+  run_e6: true
+  attribution_max_cases: 600
+  recovery_fault_type: wrong_value
+  recovery_position: middle
+  recovery_repeats: 2
+  verification_fault_types: [wrong_value, truncation]
+  verification_repeats: 1
+
+analysis:
+  confidence_level: 0.95
+  bootstrap_replicates: 2000
+  alpha: 0.05
+  primary_attribution_method: evidence_heuristic
+
+outputs:
+  root: results
+  save_traces: true
+  pricing_currency: simulated_work_units

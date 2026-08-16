@@ -1,0 +1,16 @@
+split,family,n_tasks
+dev,arithmetic_pipeline,6
+dev,constraint_decision,6
+dev,evidence_synthesis,6
+dev,shard_aggregation,6
+dev,stateful_workflow,6
+evaluation,arithmetic_pipeline,18
+evaluation,constraint_decision,18
+evaluation,evidence_synthesis,18
+evaluation,shard_aggregation,18
+evaluation,stateful_workflow,18
+pilot,arithmetic_pipeline,6
+pilot,constraint_decision,6
+pilot,evidence_synthesis,6
+pilot,shard_aggregation,6
+pilot,stateful_workflow,6

@@ -1,0 +1,8 @@
+{
+  "scheduled_fault_episodes": 11520,
+  "applied_fault_episodes": 11156,
+  "consumed_fault_episodes": 10940,
+  "application_rate": 0.9684027777777777,
+  "consumption_rate_given_scheduled": 0.9496527777777778,
+  "analysis_denominator": "Consumed injections for propagation, verification, and recovery effect summaries"
+}
