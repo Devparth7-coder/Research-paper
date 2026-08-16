@@ -1,0 +1,1 @@
+episode_id,block_id,task_id,task_version,task_family,split,architecture,topology,model_provider,model_version,prompt_hash,environment_digest,tool_versions,seed,fault_operator,fault_target,fault_position,fault_severity,fault_seed,verification_regime,recovery_strategy,observability_view,token_budget,tool_call_budget,timeout_seconds,schedule_order,manifest_hash

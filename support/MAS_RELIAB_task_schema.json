@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "MAS-RELIAB Task",
+  "type": "object",
+  "required": [
+    "task_id",
+    "task_version",
+    "family",
+    "instruction",
+    "initial_state_digest",
+    "gold",
+    "split"
+  ],
+  "properties": {
+    "task_id": {
+      "type": "string"
+    },
+    "task_version": {
+      "type": "string"
+    },
+    "family": {
+      "type": "string"
+    },
+    "instruction": {
+      "type": "string"
+    },
+    "initial_state_digest": {
+      "type": "string"
+    },
+    "tools": {
+      "type": "array"
+    },
+    "gold": {
+      "type": "object"
+    },
+    "budgets": {
+      "type": "object"
+    },
+    "injection_points": {
+      "type": "array"
+    },
+    "split": {
+      "enum": [
+        "dev",
+        "pilot",
+        "locked"
+      ]
+    },
+    "provenance": {
+      "type": "object"
+    },
+    "license": {
+      "type": "string"
+    }
+  }
+}
